@@ -44,7 +44,7 @@ const ShowSnowboard = (props) => {
     // here we'll declare a function that runs which will remove the pet
     // this function's promise chain should send a message, and then go somewhere
     const removeTheSnowboard = () => {
-        removeSnowboard(user, snowboard.id)
+        removeSnowboard(user, snowboard._id)
             // on success send a success message
             .then(() => {
                 msgAlert({

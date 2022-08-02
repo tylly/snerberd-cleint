@@ -39,6 +39,7 @@ export const updateSnowboard = (user, updatedSnowboard) => {
 
 // DELETE
 export const removeSnowboard = (user, snowboardId) => {
+    console.log(snowboardId)
     return axios({
         url: `${apiUrl}/snowboards/${snowboardId}`,
         method: 'DELETE',
