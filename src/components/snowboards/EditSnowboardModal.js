@@ -38,7 +38,6 @@ export default function EditSnowboardModal(props) {
 
       const handleSubmit = (e) => {
         e.preventDefault();
-    
         updateSnowboard(user, snowboard)
         .then(() => handleClose())
           .then(() =>

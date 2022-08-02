@@ -28,7 +28,7 @@ export const createSnowboard = (user, newSnowboard) => {
 export const updateSnowboard = (user, updatedSnowboard) => {
     console.log('this is updatedSnowboard', updatedSnowboard)
 	return axios({
-		url: `${apiUrl}/snowboards/${updatedSnowboard.id}`,
+		url: `${apiUrl}/snowboards/${updatedSnowboard._id}`,
 		method: 'PATCH',
 		headers: {
 			Authorization: `Token token=${user.token}`,
