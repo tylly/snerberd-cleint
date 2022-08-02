@@ -6,6 +6,10 @@ const messages = {
 	signOutSuccess: 'Come back soon!',
 	changePasswordSuccess: 'Password changed successfully!',
 	changePasswordFailure:'Failed to change passwords. Check your old password and try again.',
+	createSnowboardSuccess: 'Snowboard created successfully!',
+	createSnowboardFailure: 'Something went wrong, please try again.',
+	updateSnowboardSuccess: 'snowboard updated Successfully!',
+	updateSnowboardFailure: 'Couldnt update snowboard, please try again.'
 }
 
 module.exports = messages
