@@ -32,14 +32,9 @@ const SnowboardsIndex = (props) => {
         console.log(props)
         getAllSnowboards()
             .then(res => setSnowboards(res.data.snowboards))
-            .catch(err => {
-                msgAlert({
-                    heading: 'Error Getting Snowboards',
-                    message: messages.getSnowboardsFailure,
-                    variant: 'danger',
-                })
-                setError(true)
-            })
+            .catch(err => 
+                console.log(err)
+            )
     }, [])
 
     if (error) {
